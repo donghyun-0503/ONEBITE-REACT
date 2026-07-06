@@ -1,5 +1,5 @@
 // const {add, sub} = require("./math");
-import mul, {add, sub} from "./math.js";
+// import mul, {add, sub} from "./math.js";
 
 import randomColor from "randomcolor";
 
