@@ -29,7 +29,7 @@ const Register = () => {
   return (
     <div>
       <div>
-        <input value={name} onChange={onChangeName} placeholder={"이름"} />
+        <input value={name} onChange={onChangeName} placeholder={"name"} />
       </div>
 
       <div>
