@@ -3,13 +3,14 @@ import Button from "../components/Button";
 import Editor from "../components/Editor";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { DiaryStateContext } from "../App.jsx";
+import { DiaryDispatchContext } from "../App.jsx";
 
 const New = () => {
-  const { onCreate } = useContext(DiaryStateContext);
+  const { onCreate } = useContext(DiaryDispatchContext);
   const nav = useNavigate();
   const onSubmit = input => {
-    onCreate(input.createdDate, input.emotionId, input.content);
+    onCreate(input.createdDate.getTime(), input.emotionId, input.content);
+    nav("/", { replace: true });
   };
 
   return (
