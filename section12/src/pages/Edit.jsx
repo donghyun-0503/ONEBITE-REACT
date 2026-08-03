@@ -2,8 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import Editor from "../components/Editor.jsx";
-import { useContext, useEffect, useState } from "react";
-import { DiaryDispatchContext, DiaryStateContext } from "../App.jsx";
+import { useContext } from "react";
+import { DiaryDispatchContext } from "../App.jsx";
 import useDiary from "../hooks/useDiary";
 
 const Edit = () => {
